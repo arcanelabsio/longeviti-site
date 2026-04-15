@@ -1,0 +1,123 @@
+---
+layout: default
+title: Longeviti — Personal longevity tracking, powered by your own data
+description: Open, privacy-first longevity tracking. Your health reports drive adaptive meal plans, supplement schedules, and AI coaching — all stored in your own Google Drive.
+---
+
+<section class="hero">
+  <div class="hero__inner">
+    <span class="hero__eyebrow">Open source · Privacy-first</span>
+    <h1>Your health data, your longevity plan, your Drive.</h1>
+    <p class="lead">
+      Longeviti turns blood work, nutrition reports, and daily tracking into an adaptive
+      longevity plan — meals, supplements, workouts, and AI coaching. All your data stays
+      in <em>your</em> Google Drive. We never see it.
+    </p>
+    <div class="hero__cta">
+      <a class="btn btn--primary" href="{{ '/docs/getting-started/' | relative_url }}">Get started →</a>
+      <a class="btn btn--ghost" href="{{ '/docs/what-is-longeviti/' | relative_url }}">What is Longeviti?</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="mt-0">How it works</h2>
+    <p class="muted" style="max-width: 640px;">
+      Longeviti is two things working together: a Flutter app on your phone, and a set of
+      Claude Code skills that act as your nutritionist, coach, and plan author.
+    </p>
+
+    <div class="pipeline" role="list">
+      <div class="pipeline__step" role="listitem">
+        <div class="num">01</div>
+        <h4>Install the app</h4>
+        <p>Longeviti app on Android or iOS. Sign in with Google and grant Drive access.</p>
+      </div>
+      <div class="pipeline__step" role="listitem">
+        <div class="num">02</div>
+        <h4>Clone the framework</h4>
+        <p>Pull the <span class="mono">longeviti-framework</span> repo — it holds the skills that author your plan.</p>
+      </div>
+      <div class="pipeline__step" role="listitem">
+        <div class="num">03</div>
+        <h4>Run <span class="cmd">/onboard</span></h4>
+        <p>Drop in your health reports. Claude reads them and writes your profile, plan, and rules to Drive.</p>
+      </div>
+      <div class="pipeline__step" role="listitem">
+        <div class="num">04</div>
+        <h4>Track and evolve</h4>
+        <p>Log meals in the app. Run <span class="cmd">/elara</span> weekly — it coaches you and updates plans as your health changes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" style="background: var(--surface);">
+  <div class="container">
+    <h2 class="mt-0">Choose your path</h2>
+    <div class="grid grid--2">
+      <a href="{{ '/docs/getting-started/' | relative_url }}" class="card" style="text-decoration: none;">
+        <div class="card__eyebrow">I just installed the app</div>
+        <h3>Five-minute setup</h3>
+        <p class="muted">Step-by-step: install prerequisites, clone the framework, run onboarding, see your first plan.</p>
+      </a>
+      <a href="{{ '/docs/what-is-longeviti/' | relative_url }}" class="card" style="text-decoration: none;">
+        <div class="card__eyebrow">I want to understand the system</div>
+        <h3>Architecture overview</h3>
+        <p class="muted">Why two repos, how ELARA and ATLAS talk, where your data lives, what we don't touch.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="mt-0">What you get</h2>
+    <div class="grid grid--3">
+      <div class="card">
+        <div class="card__eyebrow">Adaptive plans</div>
+        <h3>Weekly meals + supplements</h3>
+        <p class="muted">Generated from your blood work, conditions, and goals. Updates automatically as new reports arrive.</p>
+      </div>
+      <div class="card">
+        <div class="card__eyebrow">Daily tracking</div>
+        <h3>Meals, vitals, workouts</h3>
+        <p class="muted">Four-ring daily summary. Offline-first, auto-synced to Drive, no account required beyond Google.</p>
+      </div>
+      <div class="card">
+        <div class="card__eyebrow">AI coaching</div>
+        <h3>Weekly insights from ELARA</h3>
+        <p class="muted">Adherence patterns, swaps, red flags, and plan directives — produced by a senior-nutritionist prompt.</p>
+      </div>
+      <div class="card">
+        <div class="card__eyebrow">Rule engine</div>
+        <h3>Compliance at a glance</h3>
+        <p class="muted">Every food is checked against your active rules — green dot if it fits, amber if it's borderline, red if not.</p>
+      </div>
+      <div class="card">
+        <div class="card__eyebrow">Your data, your Drive</div>
+        <h3>Zero-server architecture</h3>
+        <p class="muted">All plans, tracking, and reports live in <span class="mono">.app/longeviti/</span> on your own Google Drive.</p>
+      </div>
+      <div class="card">
+        <div class="card__eyebrow">Open source</div>
+        <h3>Inspect and extend</h3>
+        <p class="muted">Flutter app, JSON schemas, skills, and rules are all open. Bring your own nutritionist's protocols.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight" style="background: var(--surface-alt);">
+  <div class="container" style="text-align: center;">
+    <h2 class="mt-0">Ready to start?</h2>
+    <p class="muted" style="max-width: 520px; margin-left: auto; margin-right: auto;">
+      The full onboarding — including running Claude Code for the first time — takes about 20 minutes.
+    </p>
+    <div style="display: inline-flex; gap: var(--sp-lg); margin-top: var(--sp-xl);">
+      <a class="btn btn--solid" href="{{ '/docs/getting-started/' | relative_url }}">Read the guide</a>
+      <a class="btn" style="border: 1px solid var(--border);" href="https://github.com/ajitgunturi/longeviti-framework">View on GitHub ↗</a>
+    </div>
+  </div>
+</section>
