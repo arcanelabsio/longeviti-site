@@ -65,6 +65,8 @@ docs_nav:
     items:
       - title: What is Longeviti?
         url: /docs/what-is-longeviti/
+      - title: Bring your own AI
+        url: /docs/bring-your-own-ai/
       - title: Download & install
         url: /download/
       - title: Getting started

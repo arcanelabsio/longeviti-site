@@ -31,6 +31,7 @@ The phrase "your Claude session" is important. When you run `/elara`, Claude rea
 
 ## What Longeviti does *not* do
 
+- **No AI inference on our side.** The app does zero LLM calls. There's no Longeviti inference API, no on-device ML model, no "AI middleware" between you and your assistant. See [Bring your own AI]({{ '/docs/bring-your-own-ai/' | relative_url }}).
 - **No telemetry.** The app does not phone home. We collect zero usage data.
 - **No analytics.** No Firebase, no Mixpanel, no Google Analytics in the app or on this website.
 - **No accounts.** There is no "Longeviti account" to create. Your identity is your Google account, which you already have.
@@ -57,11 +58,17 @@ Obviously.
 ### 2. Google
 Your Drive is a Google service. Google's terms apply. If you trust Google with your email, calendar, and photos, Drive is the same trust envelope.
 
-### 3. Anthropic
-When you run `/elara` or `/atlas`, the contents of your reports and tracking get sent to Anthropic's API as part of the Claude conversation. Anthropic's [privacy policy](https://www.anthropic.com/privacy) and [usage policies](https://www.anthropic.com/legal/usage-policy) govern what happens to that data.
+### 3. Your AI provider (your choice)
+When you run `/elara` or `/atlas`, the contents of your reports and tracking get sent to *your own* AI provider's API — whichever one you chose:
+
+- **Claude Code** → Anthropic's API ([privacy policy](https://www.anthropic.com/privacy), [usage policy](https://www.anthropic.com/legal/usage-policy))
+- **Codex** → OpenAI's API ([privacy policy](https://openai.com/policies/privacy-policy))
+- **Local model via Ollama/LM Studio** → stays on your machine, zero third-party transit
+
+Longeviti does not select your AI for you and does not route your data through any service of ours. The trust you extend is to whichever provider you've already chosen for your CLI assistant.
 
 <div class="callout callout--warn">
-<p><strong>If you don't want Anthropic to see your reports</strong>, the skills won't work — they need to reason over your data. You can still use the app standalone for tracking, but you'd lose automated plan generation and coaching. Some users run a local LLM instead; this is not officially supported but the skills are MIT-licensed and can be adapted.</p>
+<p><strong>If you don't want <em>any</em> third party to see your reports</strong>, run the skills against a local model (Ollama, LM Studio, llama.cpp). This is not officially supported — larger models (70B+) produce valid plans, smaller ones often fail schema validation — but the skills are MIT-licensed Markdown files and work with any Claude-compatible CLI.</p>
 </div>
 
 ## Data you can remove

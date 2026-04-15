@@ -6,12 +6,13 @@ description: Open, privacy-first longevity tracking. Your health reports drive a
 
 <section class="hero">
   <div class="hero__inner">
-    <span class="hero__eyebrow">Open source · Privacy-first</span>
-    <h1>Your health data, your longevity plan, your Drive.</h1>
+    <span class="hero__eyebrow">Open source · Bring your own AI · Privacy-first</span>
+    <h1>Your data. Your AI. Your longevity plan.</h1>
     <p class="lead">
-      Longeviti turns blood work, nutrition reports, and daily tracking into an adaptive
-      longevity plan — meals, supplements, workouts, and AI coaching. All your data stays
-      in <em>your</em> Google Drive. We never see it.
+      Longeviti turns blood work and daily tracking into an adaptive longevity plan — meals,
+      supplements, coaching. The app does zero AI compute. Your own AI assistant — Claude,
+      Codex, or any Claude-compatible CLI — generates plans that conform to our open schemas.
+      Your data stays in <em>your</em> Google Drive. We never see it.
     </p>
     <div class="hero__cta">
       <a class="btn btn--primary" href="{{ '/download/' | relative_url }}">Download APK ↓</a>
@@ -53,7 +54,44 @@ description: Open, privacy-first longevity tracking. Your health reports drive a
   </div>
 </section>
 
-<section class="section section--tight" style="background: var(--surface);">
+<section class="section" style="background: var(--surface);">
+  <div class="container">
+    <h2 class="mt-0">Bring your own AI assistant</h2>
+    <p class="muted" style="max-width: 720px;">
+      Longeviti the app is a renderer and logger — it reads plans, shows meals, logs tracking.
+      All the reasoning — reading your reports, generating plans, producing coaching — runs in
+      <em>your</em> AI assistant's session, on <em>your</em> machine, billed to <em>your</em>
+      account. We publish the schemas; your AI writes files that conform.
+    </p>
+
+    <div class="grid grid--3" style="margin-top: var(--sp-3xl);">
+      <div class="card">
+        <div class="card__eyebrow">What the app does</div>
+        <h3>Render &amp; log</h3>
+        <p class="muted">Renders your weekly plan. Logs daily tracking. Checks food compliance against a deterministic rule engine. Zero LLM calls.</p>
+      </div>
+      <div class="card">
+        <div class="card__eyebrow">What your AI does</div>
+        <h3>Reason &amp; author</h3>
+        <p class="muted">Reads your reports. Writes your profile. Generates plans + rules. Produces weekly coaching. All via skills you run locally.</p>
+      </div>
+      <div class="card">
+        <div class="card__eyebrow">What's the contract</div>
+        <h3>Open schemas</h3>
+        <p class="muted">Four JSON Schemas define what a plan, profile, coaching session, and rules file look like. Your AI writes to spec; the app renders.</p>
+      </div>
+    </div>
+
+    <div style="margin-top: var(--sp-3xl);">
+      <strong>Supported today:</strong>
+      <span class="muted">Claude Code (first-class) · Codex (first-class) · any Claude-compatible CLI · larger local models (experimental)</span>
+      &nbsp;&nbsp;
+      <a href="{{ '/docs/bring-your-own-ai/' | relative_url }}">Read the full story →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
   <div class="container">
     <h2 class="mt-0">Choose your path</h2>
     <div class="grid grid--2">

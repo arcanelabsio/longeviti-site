@@ -31,9 +31,18 @@ Not currently. The whole sync model is Drive-based. Forks that swap in S3, iClou
 
 ## Can I use it without Claude?
 
-You can use the *app* standalone — it'll track your meals against whatever plan you put in Drive manually. You lose automated plan generation and coaching, which is most of the value.
+Yes. Longeviti is **bring-your-own-AI** — see the dedicated page at [Bring your own AI]({{ '/docs/bring-your-own-ai/' | relative_url }}). First-class support covers:
 
-Community forks have experimented with local LLMs (Ollama, LM Studio). Quality drops significantly — the skills are tuned for Claude's reasoning.
+- **Claude Code** — the default; skills tuned for Claude's reasoning
+- **Codex** — same skills, `$` prefix variants, OpenAI backend
+- **Any Claude-compatible CLI** — the skills are plain Markdown; adapt them
+- **Local models** (experimental) — 70B+ class models produce valid plans; smaller ones struggle with schema compliance
+
+You can also run the *app* standalone without any AI — you'd write plan JSON by hand (conforming to the schemas) and drop it into Drive. Tedious but possible.
+
+## Does Longeviti itself run any AI?
+
+No. Zero. The app makes no LLM calls, links no inference SDKs, and ships no on-device ML model. All reasoning happens in *your* AI assistant's session. This is architectural, not policy — grep the app source for `anthropic` or `openai` and you'll find nothing.
 
 ## Can multiple people use it on the same Drive?
 
