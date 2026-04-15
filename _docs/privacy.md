@@ -43,8 +43,8 @@ The phrase "your Claude session" is important. When you run `/elara`, Claude rea
 
 - Builds an Android APK that you sideload on your phone (iOS build planned).
 - Hosts this documentation site on GitHub Pages.
-- Publishes APK releases on the [longeviti-site releases page](https://github.com/ajitgunturi/longeviti-site/releases).
-- Maintains the public [longeviti-framework](https://github.com/ajitgunturi/longeviti-framework) repo with the schemas and skills your AI uses.
+- Publishes APK releases on the [longeviti-site releases page](https://github.com/arcanelabs/longeviti-site/releases).
+- Maintains the public [longeviti-framework](https://github.com/arcanelabs/longeviti-framework) repo with the schemas and skills your AI uses.
 
 That's the entire operational surface.
 
@@ -96,7 +96,7 @@ Longeviti is not intended for or directed at anyone under 16. It's not designed 
 
 ## Security
 
-The framework (skills + schemas) is open source and publicly auditable. The app is a free binary we distribute; its data-flow surface is constrained to Google Drive (no other network destinations). Security researchers are welcome to inspect the public framework and the observable behavior of the app. Report vulnerabilities via the [SECURITY.md in the framework repo](https://github.com/ajitgunturi/longeviti-framework/blob/main/SECURITY.md).
+The framework (skills + schemas) is open source and publicly auditable. The app is a free binary we distribute; its data-flow surface is constrained to Google Drive (no other network destinations). Security researchers are welcome to inspect the public framework and the observable behavior of the app. Report vulnerabilities via the [SECURITY.md in the framework repo](https://github.com/arcanelabs/longeviti-framework/blob/main/SECURITY.md).
 
 ## Next
 

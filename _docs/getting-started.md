@@ -31,7 +31,7 @@ We're not on the Play Store yet, so you'll sideload the APK. It's a two-minute f
 
 TL;DR:
 
-1. Download `longeviti.apk` from our [latest release](https://github.com/ajitgunturi/longeviti-site/releases/latest).
+1. Download `longeviti.apk` from our [latest release](https://github.com/arcanelabs/longeviti-site/releases/latest).
 2. Open it on your phone; approve "Install unknown apps" when prompted.
 3. Launch Longeviti, sign in with Google, grant Drive access.
 
@@ -42,7 +42,7 @@ You'll land on a "no plan yet" empty state — that's expected. The framework wi
 On your computer:
 
 ```bash
-git clone https://github.com/ajitgunturi/longeviti-framework.git ~/longeviti-framework
+git clone https://github.com/arcanelabs/longeviti-framework.git ~/longeviti-framework
 cd ~/longeviti-framework
 ```
 

@@ -87,6 +87,6 @@ None. This site has no tracking, no cookies, no analytics. GitHub Pages serves t
 
 File an issue on whichever repo is most relevant:
 
-- App bugs & feature requests → [github.com/ajitgunturi/longeviti-site/issues](https://github.com/ajitgunturi/longeviti-site/issues) (label: `app`)
-- Framework / skills → [github.com/ajitgunturi/longeviti-framework/issues](https://github.com/ajitgunturi/longeviti-framework/issues)
-- Docs site → [github.com/ajitgunturi/longeviti-site/issues](https://github.com/ajitgunturi/longeviti-site/issues)
+- App bugs & feature requests → [github.com/arcanelabs/longeviti-site/issues](https://github.com/arcanelabs/longeviti-site/issues) (label: `app`)
+- Framework / skills → [github.com/arcanelabs/longeviti-framework/issues](https://github.com/arcanelabs/longeviti-framework/issues)
+- Docs site → [github.com/arcanelabs/longeviti-site/issues](https://github.com/arcanelabs/longeviti-site/issues)

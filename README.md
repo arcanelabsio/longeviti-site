@@ -87,7 +87,7 @@ A   @   185.199.111.153
 And a CNAME for `www`:
 
 ```
-CNAME   www   ajitgunturi.github.io
+CNAME   www   arcanelabs.github.io
 ```
 
 In the GitHub repo: Settings → Pages → Custom domain → `longeviti.app` → Enforce HTTPS.

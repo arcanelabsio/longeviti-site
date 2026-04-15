@@ -3,7 +3,7 @@ title: Schemas
 lead: The formal contracts between the app, ELARA, and ATLAS. Read these if you're extending the system or debugging a plan.
 ---
 
-Every file Longeviti produces conforms to a JSON Schema (or YAML equivalent). The schemas live in the framework repo at [`schemas/`](https://github.com/ajitgunturi/longeviti-framework/tree/main/schemas).
+Every file Longeviti produces conforms to a JSON Schema (or YAML equivalent). The schemas live in the framework repo at [`schemas/`](https://github.com/arcanelabs/longeviti-framework/tree/main/schemas).
 
 ## The four schemas
 
