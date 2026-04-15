@@ -21,7 +21,7 @@ No. Longeviti is a personal tracking and planning tool. It does not diagnose, tr
 
 ## What does it cost?
 
-- **Longeviti itself**: free, open source.
+- **Longeviti itself**: free. The framework (skills + schemas) is open source; the app is a free binary we distribute.
 - **Google Drive**: free tier (15 GB) is plenty; all your Longeviti data combined is under 50 MB.
 - **Claude Code**: Pro tier (currently $20/month) is sufficient for weekly ELARA runs.
 
@@ -42,7 +42,7 @@ You can also run the *app* standalone without any AI — you'd write plan JSON b
 
 ## Does Longeviti itself run any AI?
 
-No. Zero. The app makes no LLM calls, links no inference SDKs, and ships no on-device ML model. All reasoning happens in *your* AI assistant's session. This is architectural, not policy — grep the app source for `anthropic` or `openai` and you'll find nothing.
+No. Zero. The app makes no LLM calls, links no inference SDKs, and ships no on-device ML model. All reasoning happens in *your* AI assistant's session. This is architectural, not policy — see [Bring your own AI]({{ '/docs/bring-your-own-ai/' | relative_url }}) for the observable signals (network egress, APK size, public schema contract) that back this up.
 
 ## Can multiple people use it on the same Drive?
 
@@ -64,7 +64,7 @@ Not automatically. The JSON files are trivially convertible with a small script 
 
 ## How do I know Longeviti won't quit?
 
-You don't, for sure. Mitigation: everything is open source. If the project stops, the app keeps working (it's your local binary), the schemas are yours, and your data is in a format you can read with any editor. The worst case is "no more plan updates", not "data loss".
+You don't, for sure. Mitigation: the framework (skills + schemas) is open source, and your data lives on your own Drive in human-readable JSON/YAML/Markdown. If the project stops, the app keeps working (it's your local binary), your plans remain readable, and any capable AI can keep authoring new ones against the published schemas. The worst case is "no more app updates", not "data loss".
 
 ## Can I contribute?
 
@@ -87,6 +87,6 @@ None. This site has no tracking, no cookies, no analytics. GitHub Pages serves t
 
 File an issue on whichever repo is most relevant:
 
-- App → [github.com/ajitgunturi/longeviti](https://github.com/ajitgunturi/longeviti)
-- Framework / skills → [github.com/ajitgunturi/longeviti-framework](https://github.com/ajitgunturi/longeviti-framework)
-- Docs site → [github.com/ajitgunturi/longeviti-site](https://github.com/ajitgunturi/longeviti-site)
+- App bugs & feature requests → [github.com/ajitgunturi/longeviti-site/issues](https://github.com/ajitgunturi/longeviti-site/issues) (label: `app`)
+- Framework / skills → [github.com/ajitgunturi/longeviti-framework/issues](https://github.com/ajitgunturi/longeviti-framework/issues)
+- Docs site → [github.com/ajitgunturi/longeviti-site/issues](https://github.com/ajitgunturi/longeviti-site/issues)

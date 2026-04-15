@@ -75,13 +75,13 @@ If Anthropic ships a better model next month, you use it — no waiting for us t
 Every prompt used by the framework is a Markdown file in the public repo. You can read exactly what your AI was told to do. Compare that with opaque server-side prompts in most "AI health" products.
 
 ### Portability
-The app, the schemas, and the skills are open source and MIT-licensed. If we disappeared tomorrow, you'd still have:
+The schemas and the skills are open source and MIT-licensed (the app is a free binary we distribute). If we disappeared tomorrow, you'd still have:
 - Your data (on your Drive)
-- Your plans (readable JSON)
-- Your skill prompts (Markdown files)
-- The app binary (already on your phone)
+- Your plans (readable JSON, conforming to public schemas)
+- Your skill prompts (public Markdown files in the framework repo)
+- The app binary (already on your phone; keeps working)
 
-Your AI assistant doesn't care if Longeviti exists.
+Your AI assistant doesn't care if Longeviti exists. Given the same schemas, any capable assistant can author plans that any renderer — ours or one you write yourself — can display.
 
 ## The responsibility trade-off
 
@@ -95,13 +95,17 @@ If you'd rather pay a service to do all of this invisibly, Longeviti is probably
 
 ## What the app literally cannot do
 
-Even if we wanted to, the app cannot:
+By design, the app cannot:
 
-- **Call an LLM.** There's no SDK for Anthropic, OpenAI, or any inference provider linked into the app binary.
+- **Call an LLM.** No SDK for Anthropic, OpenAI, or any inference provider is linked into the app binary.
 - **Run inference locally.** No on-device ML model ships in the APK.
-- **Route your data through a "helpful" intermediate service.** There is no intermediate service.
+- **Route your data through a "helpful" intermediate service.** There is no intermediate service — the app reads and writes only to your Drive folder, nothing else.
 
-You can verify this — the source is at [github.com/ajitgunturi/longeviti](https://github.com/ajitgunturi/longeviti). Grep for `anthropic`, `openai`, `tflite`, `onnx` — you'll find nothing that does inference.
+How can you verify this when the app binary isn't public? Three observable signals:
+
+1. **Network egress.** The app only talks to Google Drive APIs. You can confirm with any on-device network inspector or by revoking every non-Drive permission — the app continues to function.
+2. **APK size.** The release APK is ~21 MB. An app that bundled a usable on-device LLM would be 500 MB minimum.
+3. **The contract.** The framework (public) authors all plans. The app renders what's on your Drive. If you want to see what the app *reads*, the schemas it consumes are open at [github.com/ajitgunturi/longeviti-framework](https://github.com/ajitgunturi/longeviti-framework/tree/main/schemas).
 
 ## The bottom line
 

@@ -105,6 +105,6 @@ You're reading this on [longeviti.app](https://longeviti.app). If the site is mi
 
 File an issue:
 
-- **App bugs** → [github.com/ajitgunturi/longeviti/issues](https://github.com/ajitgunturi/longeviti/issues)
+- **App bugs & feature requests** → [github.com/ajitgunturi/longeviti-site/issues](https://github.com/ajitgunturi/longeviti-site/issues) (label: `app`)
 - **Framework / skill bugs** → [github.com/ajitgunturi/longeviti-framework/issues](https://github.com/ajitgunturi/longeviti-framework/issues)
 - **Docs issues** → [github.com/ajitgunturi/longeviti-site/issues](https://github.com/ajitgunturi/longeviti-site/issues)
