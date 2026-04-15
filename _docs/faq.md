@@ -5,7 +5,7 @@ lead: Short answers to questions that don't need their own page.
 
 ## Why two repos instead of one app?
 
-The intelligence (Claude skills) evolves on a different cadence from the app binary. Skill improvements can ship the moment a new prompt is better; app releases are blocked on app store review. Separation lets both move at their natural speed.
+The intelligence (Claude skills) evolves on a different cadence from the app binary. Skill improvements can ship the moment a new prompt is better; app releases go through a sideloaded APK (and eventually store review). Separation lets both move at their natural speed.
 
 ## Do I need a nutritionist?
 
@@ -43,7 +43,11 @@ For couples / families, each person gets their own Google account and their own 
 
 ## Is there a web version of the app?
 
-Not currently. The mobile app is the primary client. You can read and edit any of the underlying JSON/Markdown files in Drive directly from the web, which covers the "I need to check my plan from a computer" case.
+Not currently. The mobile app (Android, sideloaded) is the primary client. You can read and edit any of the underlying JSON/Markdown files in Drive directly from the web, which covers the "I need to check my plan from a computer" case.
+
+## Is there an iOS version?
+
+Not yet. An iOS build is planned but requires an Apple Developer Program account and TestFlight setup. Android APK sideloading is simpler for early users. If you're on iPhone, the framework skills still work from a Mac — you just won't have a mobile UI for logging.
 
 ## Can I export my data to Apple Health / Google Fit?
 

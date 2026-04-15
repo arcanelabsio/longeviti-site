@@ -53,8 +53,8 @@ exclude:
 nav:
   - title: Docs
     url: /docs/
-  - title: App
-    url: /app/
+  - title: Download
+    url: /download/
   - title: Framework
     url: https://github.com/ajitgunturi/longeviti-framework
     external: true
@@ -65,6 +65,8 @@ docs_nav:
     items:
       - title: What is Longeviti?
         url: /docs/what-is-longeviti/
+      - title: Download & install
+        url: /download/
       - title: Getting started
         url: /docs/getting-started/
       - title: Prerequisites

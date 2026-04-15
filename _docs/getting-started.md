@@ -15,7 +15,7 @@ By the end of this guide, you'll have:
 
 You'll need:
 
-- An Android or iOS device
+- An Android 10+ device (iOS coming later — see [Download & install]({{ '/download/' | relative_url }}))
 - A Google account (for Drive)
 - A computer (Mac, Linux, or Windows) with terminal access
 - At least one health input — a blood work report, a nutritionist's plan, or even just a doctor's note in a PDF or photo. Don't have one? See [Prerequisites]({{ '/docs/prerequisites/' | relative_url }}) for what works as a minimum.
@@ -27,11 +27,15 @@ You'll need:
 
 ## Step 1 — Install the app
 
-Grab the latest APK (Android) or TestFlight link (iOS) from the [releases page](https://github.com/ajitgunturi/longeviti/releases). Open it on your phone and sign in with Google when prompted.
+We're not on the Play Store yet, so you'll sideload the APK. It's a two-minute flow — see [Download & install]({{ '/download/' | relative_url }}) for the full walkthrough (allow-unknown-sources, SHA256 verification, update path).
 
-The app will ask for Drive access — approve it. On first launch you'll see the sync-gate screen: the app is creating the `.app/longeviti/` folder on your Drive if it doesn't already exist.
+TL;DR:
 
-You'll see a "no plan yet" empty state. That's expected. The framework will fill it in.
+1. Download `longeviti.apk` from our [latest release](https://github.com/ajitgunturi/longeviti-site/releases/latest).
+2. Open it on your phone; approve "Install unknown apps" when prompted.
+3. Launch Longeviti, sign in with Google, grant Drive access.
+
+You'll land on a "no plan yet" empty state — that's expected. The framework will fill it in.
 
 ## Step 2 — Clone the framework
 

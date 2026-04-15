@@ -11,7 +11,7 @@ Longeviti has two moving parts you'll interact with:
 
 | Part | What it is | Where it lives |
 |---|---|---|
-| **The app** | A Flutter mobile app that renders your plan, logs daily tracking, and shows coaching insights | On your phone (Android / iOS) |
+| **The app** | A Flutter mobile app that renders your plan, logs daily tracking, and shows coaching insights | On your Android phone (sideloaded APK — iOS planned) |
 | **The framework** | Claude Code skills (`/onboard`, `/elara`, `/atlas`) that author and evolve your plan | A repo you clone locally |
 
 Between them sits the contract — a set of JSON schemas and a folder on your Google Drive. The app only *reads* plans; the framework only *writes* them. Tracking data flows the other way: the app writes it, the framework reads it to produce coaching.
@@ -57,4 +57,4 @@ The app uses OAuth to read and write inside *this folder only*. The framework ru
 - People *without* a nutritionist who want a real plan from their blood work.
 - Engineers who want to read the schemas and bend the system to their own protocols.
 
-If that's you, head to [Getting started]({{ '/docs/getting-started/' | relative_url }}).
+If that's you, grab the [APK]({{ '/download/' | relative_url }}) and head to [Getting started]({{ '/docs/getting-started/' | relative_url }}).

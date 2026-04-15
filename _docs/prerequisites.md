@@ -7,7 +7,7 @@ lead: What you need — in software, hardware, and input data — to get a usefu
 
 | What | Why | How |
 |---|---|---|
-| Android 10+ or iOS 15+ | App target SDKs | Phone settings |
+| Android 10+ | App target SDK (iOS build not available yet) | Phone settings |
 | Google account | Drive sync | Any Gmail account |
 | Git | Clone the framework | `brew install git`, `apt install git`, or [git-scm.com](https://git-scm.com) |
 | Claude Code | Runs the skills | [claude.com/claude-code](https://claude.com/claude-code) |

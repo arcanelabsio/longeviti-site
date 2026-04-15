@@ -40,8 +40,9 @@ The phrase "your Claude session" is important. When you run `/elara`, Claude rea
 
 ## What Longeviti *does* do
 
-- Builds an Android APK and iOS TestFlight binary that you install on your phone.
+- Builds an Android APK that you sideload on your phone (iOS build planned).
 - Hosts this documentation site and the open-source code on GitHub.
+- Publishes APK releases on the [longeviti-site releases page](https://github.com/ajitgunturi/longeviti-site/releases).
 - Publishes updates to the framework repo, which you pull down manually.
 
 That's the entire operational surface.
