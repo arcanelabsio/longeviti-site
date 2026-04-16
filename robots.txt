@@ -1,0 +1,13 @@
+---
+# Rendered to /robots.txt by Jekyll so {{ site.url }} resolves.
+layout: null
+permalink: /robots.txt
+sitemap: false
+---
+User-agent: *
+Allow: /
+
+# Block nothing — this is a public marketing + docs site. If you add
+# thank-you pages, checkout flows, or gated pages later, disallow them here.
+
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml

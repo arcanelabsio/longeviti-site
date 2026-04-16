@@ -1,16 +1,37 @@
 title: Longeviti
 tagline: Personal longevity tracking, powered by your own data
 description: >
-  Longeviti is an open, privacy-first longevity tracking system. Your health
-  reports drive adaptive meal plans, supplement schedules, and AI coaching —
-  all stored in your own Google Drive, never on our servers.
+  Longeviti is an open, privacy-first longevity tracking system developed at
+  Arcane Labs. Your health reports drive adaptive meal plans, supplement
+  schedules, and AI coaching — all stored in your own Google Drive, never on
+  our servers.
 
 url: "https://longeviti.app"
 baseurl: ""
 
 author:
-  name: Ajit Gunturi
-  github: ajitgunturi
+  name: Arcane Labs
+  email: apps@arcanelabs.info
+  url: https://longeviti.app
+  github: arcanelabsio
+
+# Vendor / organization — surfaced by jekyll-seo-tag as JSON-LD Organization
+# and read by templates for the footer and any "developed by" marketing copy.
+organization:
+  name: Arcane Labs
+  url: https://github.com/arcanelabsio
+  email: apps@arcanelabs.info
+
+# Social — consumed by jekyll-seo-tag for Twitter/OG cards.
+twitter:
+  username: arcanelabsio
+  card: summary_large_image
+
+social:
+  name: Arcane Labs
+  links:
+    - https://github.com/arcanelabsio
+    - https://longeviti.app
 
 repository: arcanelabsio/longeviti-site
 
