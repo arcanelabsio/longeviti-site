@@ -62,7 +62,7 @@ Same screen, different rings:
 
 - All logging works **offline** — no connectivity required.
 - Changes are saved to local JSON immediately.
-- A **10-second debounced auto-sync** pushes to Drive after you stop editing (see [ADR-0009]({{ '/docs/drive-layout/' | relative_url }})).
+- A **10-second debounced auto-sync** pushes to Drive after you stop editing (see [ADR-0008]({{ '/docs/drive-layout/' | relative_url }})).
 - Conflict resolution uses `newerWins` — if you log from two devices, the most recent write survives.
 
 ## What gets sent to ELARA
