@@ -17,6 +17,17 @@ repository: arcanelabsio/longeviti-site
 # Jekyll built-in theme disabled — we ship our own CSS to mirror the app's design tokens.
 theme: null
 
+# GitHub Pages plugins must be explicitly enabled even though they are
+# pre-installed in the build image. `_includes/head.html` uses `{% seo %}`
+# so jekyll-seo-tag is load-bearing; the others are free additions
+# (all on the Pages whitelist, no Gemfile changes needed).
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jekyll-feed
+  - jekyll-redirect-from
+
 markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
