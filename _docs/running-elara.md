@@ -75,7 +75,7 @@ On every run, in this order:
 - **One session JSON** per run in `elara/` — this is the coaching output the app renders
 - **Directives to ATLAS** — logged in the session and executed in the same run
 
-ELARA does not directly write to `plans/` or `rules.yaml`. Plan changes always go through ATLAS. This separation is architectural — see [ADR-002 in the framework](https://github.com/arcanelabs/longeviti-framework/blob/main/docs/adr/002-atlas-elara-pipeline-separation.md).
+ELARA does not directly write to `plans/` or `rules.yaml`. Plan changes always go through ATLAS. This separation is architectural — see [ADR-002 in the framework](https://github.com/arcanelabsio/longeviti-framework/blob/main/docs/adr/002-atlas-elara-pipeline-separation.md).
 
 ## Autonomy levels
 

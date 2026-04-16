@@ -80,7 +80,7 @@ If sync has been stuck for > 5 minutes:
 Two flavors of this:
 
 **"ELARA says eat more carbs but my rule says carbs < 40%."**
-The rule wins. ELARA should respect hard rules — if it's violating one, that's a bug. Report it at [github.com/arcanelabs/longeviti-framework/issues](https://github.com/arcanelabs/longeviti-framework/issues).
+The rule wins. ELARA should respect hard rules — if it's violating one, that's a bug. Report it at [github.com/arcanelabsio/longeviti-framework/issues](https://github.com/arcanelabsio/longeviti-framework/issues).
 
 **"ELARA says swap dinner A for dinner B, but I don't like dinner B."**
 Preferences aren't rules unless they're in `profile.json`. Run:
@@ -99,12 +99,12 @@ If that fails, check your Claude subscription status. Pro tier is required for t
 
 ## The site itself is broken
 
-You're reading this on [longeviti.app](https://longeviti.app). If the site is misbehaving (404s, broken styles), report it at [github.com/arcanelabs/longeviti-site/issues](https://github.com/arcanelabs/longeviti-site/issues). This site is independent from the app, so a site outage doesn't affect your data or the app itself.
+You're reading this on [longeviti.app](https://longeviti.app). If the site is misbehaving (404s, broken styles), report it at [github.com/arcanelabsio/longeviti-site/issues](https://github.com/arcanelabsio/longeviti-site/issues). This site is independent from the app, so a site outage doesn't affect your data or the app itself.
 
 ## Something else
 
 File an issue:
 
-- **App bugs & feature requests** → [github.com/arcanelabs/longeviti-site/issues](https://github.com/arcanelabs/longeviti-site/issues) (label: `app`)
-- **Framework / skill bugs** → [github.com/arcanelabs/longeviti-framework/issues](https://github.com/arcanelabs/longeviti-framework/issues)
-- **Docs issues** → [github.com/arcanelabs/longeviti-site/issues](https://github.com/arcanelabs/longeviti-site/issues)
+- **App bugs & feature requests** → [github.com/arcanelabsio/longeviti-site/issues](https://github.com/arcanelabsio/longeviti-site/issues) (label: `app`)
+- **Framework / skill bugs** → [github.com/arcanelabsio/longeviti-framework/issues](https://github.com/arcanelabsio/longeviti-framework/issues)
+- **Docs issues** → [github.com/arcanelabsio/longeviti-site/issues](https://github.com/arcanelabsio/longeviti-site/issues)

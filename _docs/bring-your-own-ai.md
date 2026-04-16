@@ -29,7 +29,7 @@ This all happens in **your AI assistant's session**, on your machine, paid for o
 
 ## The contract: schemas
 
-How can "your AI" produce plans that "our app" can render? Because the app publishes a **formal contract** — JSON Schemas in [`data-framework/schemas/`](https://github.com/arcanelabs/longeviti-framework/tree/main/schemas):
+How can "your AI" produce plans that "our app" can render? Because the app publishes a **formal contract** — JSON Schemas in [`data-framework/schemas/`](https://github.com/arcanelabsio/longeviti-framework/tree/main/schemas):
 
 | Schema | Contract |
 |---|---|
@@ -105,7 +105,7 @@ How can you verify this when the app binary isn't public? Three observable signa
 
 1. **Network egress.** The app only talks to Google Drive APIs. You can confirm with any on-device network inspector or by revoking every non-Drive permission — the app continues to function.
 2. **APK size.** The release APK is ~21 MB. An app that bundled a usable on-device LLM would be 500 MB minimum.
-3. **The contract.** The framework (public) authors all plans. The app renders what's on your Drive. If you want to see what the app *reads*, the schemas it consumes are open at [github.com/arcanelabs/longeviti-framework](https://github.com/arcanelabs/longeviti-framework/tree/main/schemas).
+3. **The contract.** The framework (public) authors all plans. The app renders what's on your Drive. If you want to see what the app *reads*, the schemas it consumes are open at [github.com/arcanelabsio/longeviti-framework](https://github.com/arcanelabsio/longeviti-framework/tree/main/schemas).
 
 ## The bottom line
 

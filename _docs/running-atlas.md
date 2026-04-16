@@ -42,7 +42,7 @@ It never touches:
 - `tracking/` (app owns this)
 - `elara/session_*.json` (ELARA owns this)
 
-This boundary is enforced architecturally — ATLAS's skill definition only grants it write access to these paths. See the framework's [ADR-002](https://github.com/arcanelabs/longeviti-framework/blob/main/docs/adr/002-atlas-elara-pipeline-separation.md).
+This boundary is enforced architecturally — ATLAS's skill definition only grants it write access to these paths. See the framework's [ADR-002](https://github.com/arcanelabsio/longeviti-framework/blob/main/docs/adr/002-atlas-elara-pipeline-separation.md).
 
 ## The directive language
 
