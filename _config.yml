@@ -1,10 +1,10 @@
 title: Longeviti
-tagline: Personal longevity tracking, powered by your own data
+tagline: Nutrition coaching, grounded in your health reports
 description: >
-  Longeviti is an open, privacy-first longevity tracking system developed at
-  Arcane Labs. Your health reports drive adaptive meal plans, supplement
-  schedules, and AI coaching — all stored in your own Google Drive, never on
-  our servers.
+  Longeviti is a practitioner-led nutrition coaching platform developed at
+  Arcane Labs. Certified nutritionists review your health reports and deliver
+  personalized meal and supplement plans through a modern app. Rebuilding the
+  client-facing platform in 2026 — join the waitlist.
 
 url: "https://longeviti.app"
 baseurl: ""
@@ -57,17 +57,7 @@ kramdown:
 
 permalink: pretty
 
-collections:
-  docs:
-    output: true
-    permalink: /docs/:path/
-
 defaults:
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: doc
   - scope:
       path: ""
       type: pages
@@ -81,67 +71,6 @@ exclude:
   - vendor
   - .jekyll-cache
 
-# Nav order for the top bar.
-nav:
-  - title: Docs
-    url: /docs/
-  - title: Download
-    url: /download/
-  - title: Framework
-    url: https://github.com/arcanelabsio/longeviti-framework
-    external: true
-
-# Docs sidebar order — controls left-nav on all doc pages.
-docs_nav:
-  - section: Start here
-    items:
-      - title: What is Longeviti?
-        url: /docs/what-is-longeviti/
-      - title: Bring your own AI
-        url: /docs/bring-your-own-ai/
-      - title: Download & install
-        url: /download/
-      - title: Getting started
-        url: /docs/getting-started/
-      - title: Prerequisites
-        url: /docs/prerequisites/
-  - section: Onboarding
-    items:
-      - title: First-time setup
-        url: /docs/onboarding/
-      - title: Uploading health reports
-        url: /docs/health-reports/
-      - title: Profile and targets
-        url: /docs/profile/
-  - section: Daily use
-    items:
-      - title: Logging meals
-        url: /docs/logging-meals/
-      - title: Vitals and workouts
-        url: /docs/vitals-workouts/
-      - title: Reading coaching insights
-        url: /docs/coaching/
-  - section: Evolving your plan
-    items:
-      - title: Running ELARA
-        url: /docs/running-elara/
-      - title: Updating plans via ATLAS
-        url: /docs/running-atlas/
-      - title: Adding new reports
-        url: /docs/new-reports/
-  - section: Data and privacy
-    items:
-      - title: Google Drive layout
-        url: /docs/drive-layout/
-      - title: Privacy model
-        url: /docs/privacy/
-      - title: Backup and export
-        url: /docs/backup/
-  - section: Reference
-    items:
-      - title: Schemas
-        url: /docs/schemas/
-      - title: Troubleshooting
-        url: /docs/troubleshooting/
-      - title: FAQ
-        url: /docs/faq/
+# Minimal top-nav during the rebuild. Restore docs + download links once the
+# new client-facing platform is live.
+nav: []

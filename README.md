@@ -1,8 +1,8 @@
 # longeviti-site
 
-Public documentation site for [Longeviti](https://longeviti.app) — the personal longevity tracking app and framework.
+Marketing site for [Longeviti](https://longeviti.app) — a practitioner-led nutrition coaching platform. Currently serving a waitlist page while the client-facing platform is rebuilt in 2026.
 
-**Developed at [Arcane Labs](https://github.com/arcanelabsio)** · contact: hello@arcanelabs.info
+**Developed at [Arcane Labs](https://arcanelabs.info)** · contact: hello@arcanelabs.info
 **Live at:** [longeviti.app](https://longeviti.app)
 **Built with:** Jekyll (GitHub Pages' built-in generator — no Actions needed)
 **License:** [Dual — site code MIT, content CC BY 4.0](./LICENSE). Trademarks reserved.
@@ -26,45 +26,25 @@ Files change → Jekyll rebuilds → browser reloads.
 ## Structure
 
 ```
-_config.yml            ← Jekyll config + nav + docs sidebar order
+_config.yml            ← Jekyll config
 _layouts/
-  default.html         ← Shell used by marketing pages (landing, docs hub)
-  doc.html             ← Shell used by every doc page (adds sidebar)
+  default.html         ← Shell used by all pages
 _includes/
   head.html            ← <head> contents
   nav.html             ← Top nav bar
   footer.html          ← Footer
-  docs-sidebar.html    ← Left sidebar on doc pages (reads site.docs_nav)
-_docs/                 ← Doc pages as Markdown (collection, permalink /docs/:path/)
-docs/
-  index.html           ← Docs hub page (at /docs/)
-index.html             ← Landing page (at /)
+index.html             ← Waitlist landing page (at /)
+404.html               ← Not-found page
 assets/
-  css/main.css         ← Design tokens mirrored from the Flutter app's theme
+  css/main.css         ← Design tokens
   img/                 ← Static images
 CNAME                  ← longeviti.app (for GitHub Pages custom domain)
 Gemfile                ← Pinned to github-pages gem version
 ```
 
+The `_docs/` collection and docs hub were removed during the 2026 rebuild — they described the old BYO-Claude architecture, which no longer matches what we're building. Docs will return under a new structure once the new client-facing platform is live.
+
 ## Editing content
-
-### Add a doc page
-
-1. Create `_docs/my-new-page.md`:
-   ```markdown
-   ---
-   title: My new page
-   lead: One-line description used as subtitle.
-   ---
-
-   Page content in Markdown.
-   ```
-2. Add it to the sidebar by editing `_config.yml` → `docs_nav`.
-3. Commit and push.
-
-### Edit the sidebar order
-
-Only in `_config.yml` under `docs_nav`. It's the single source of truth for nav structure.
 
 ### Change a design token
 
