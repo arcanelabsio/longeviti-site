@@ -2,7 +2,7 @@
 
 Public documentation site for [Longeviti](https://longeviti.app) — the personal longevity tracking app and framework.
 
-**Developed at [Arcane Labs](https://github.com/arcanelabsio)** · contact: apps@arcanelabs.info
+**Developed at [Arcane Labs](https://github.com/arcanelabsio)** · contact: hello@arcanelabs.info
 **Live at:** [longeviti.app](https://longeviti.app)
 **Built with:** Jekyll (GitHub Pages' built-in generator — no Actions needed)
 **License:** [Dual — site code MIT, content CC BY 4.0](./LICENSE). Trademarks reserved.
