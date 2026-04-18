@@ -1,6 +1,6 @@
 # longeviti-site
 
-Marketing site for [Longeviti](https://longeviti.app) — a practitioner-led nutrition coaching platform. Currently serving a waitlist page while the client-facing platform is rebuilt in 2026.
+Marketing site for [Longeviti](https://longeviti.app) — a practitioner-led nutrition coaching platform. Currently serving an informational landing page while the client-facing platform is built out in 2026.
 
 **Developed at [Arcane Labs](https://arcanelabs.info)** · contact: hello@arcanelabs.info
 **Live at:** [longeviti.app](https://longeviti.app)
@@ -33,7 +33,7 @@ _includes/
   head.html            ← <head> contents
   nav.html             ← Top nav bar
   footer.html          ← Footer
-index.html             ← Waitlist landing page (at /)
+index.html             ← Informational landing page (at /)
 404.html               ← Not-found page
 assets/
   css/main.css         ← Design tokens
